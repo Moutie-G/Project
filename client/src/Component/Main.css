@@ -1,0 +1,142 @@
+.hr-text {
+    line-height: 1em;
+    position: relative;
+    outline: 0;
+    border: 0;
+    color: black;
+    text-align: center;
+    height: 1.5em;
+    opacity: 0.5;
+}
+.hr-text:before {
+    content: "";
+    border: 1px solid #1c1b1b;
+    border-left: none;
+    border-right: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 49%;
+    width: 100%;
+    height: 3px;
+}
+.hr-text:after {
+    content: attr(data-content);
+    position: relative;
+    display: inline-block;
+    color: black;
+    padding: 0 0.5em;
+    line-height: 1.5em;
+    background-color: #fcfcfa;
+}
+.hr-sm {
+    max-width: 300px;
+}
+.hr-md {
+    max-width: 700px;
+}
+.galerie {
+    position: relative;
+}
+.galerie .slick-slide img {
+    display: initial;
+}
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.next-arrow {
+    right: 5px;
+}
+.prev-arrow {
+    left: 5px;
+}
+.card.custom-card {
+    background-color: #f6d8c0;
+    border-radius: 0;
+    border-bottom: 5px solid #787878;
+}
+.custom-card a {
+    text-decoration: unset;
+    font-size: 1.1rem;
+    color: #787878;
+    border-bottom: 4px solid #787878;
+}
+.custom-card a:hover, .card.custom-card:hover a {
+    color: #f6d8c0;
+    border-bottom: 4px solid #f6d8c0;
+}
+.card.custom-card:hover {
+    background-color: #787878;
+    color: #f6d8c0;
+}
+
+.custom-card h3 {
+    padding-top: 10px;
+}
+
+.custom-card .hr-text {
+    margin-right: 1.25rem;
+    margin-left: 1.25rem;
+}
+
+.custom-card .card-img-top {
+    border-radius: 0;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+}
+
+.s-galerie {
+    background: url("images/bg-galerie.jpg");
+    padding-bottom: 15px;
+}
+.s-main {
+    background-image: url("images/bg-content.jpg");
+    background-repeat: no-repeat;
+}
+
+nav.custom-nav {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+nav.custom-nav ul.navbar-nav {
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+@media (min-width: 768px) {
+    nav.custom-nav ul.navbar-nav .nav-item:not(.logo) .nav-link {
+        margin-top: 30px;
+    }
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-bottom: 20px solid #787878;
+    color: #f6d8c0;
+}
+
+footer h3 {
+    margin-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: 3px double #f6d8c0;
+}
+
+.custom-input-group input,.custom-input-group button {
+    border-radius: 0;
+}
+.custom-input-group button {
+    background-color: #d39e00;
+    border-color: #d39e00;
+    color: white;
+}
+.title-1 {
+    padding-top: 15px;
+    color: #6e5219;
+    font-size: 2.1rem;
+}
+.title-2 {
+    font-family: 'Yellowtail', cursive;
+    color: #d39e00;
+    font-size: 1.9rem;
+}
